@@ -1,0 +1,4 @@
+Pillow
+PyYaml
+numpy
+opencv-contrib-python
