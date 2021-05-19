@@ -1,5 +1,5 @@
 Steps:
-1) install the requirements.txt
+1) install the requirement.txt
 2) pip install -r requirements.txt
 3) python train_model.py
 4) python recognize.py
