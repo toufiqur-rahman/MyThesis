@@ -8,16 +8,8 @@ import yaml
 faceCascade = cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
 
 recognizer = cv2.face.LBPHFaceRecognizer_create()
-#recognizer.load('training.yml')
+recognizer.read('training.yml')
 #print(recognizer)
-
-with open('training.yml', 'r') as yaml_file:
-    try:
-        # print(yaml.safe_load(yaml_file))
-        recognizer = yaml.safe_load(yaml_file)
-        print(recognizer)
-    except yaml.YAMLError as exc:
-        print(exc)
 
 # faceCascade = cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
 # Names corresponding to each id
