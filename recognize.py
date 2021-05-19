@@ -24,8 +24,7 @@ while True:
     print("hello while loop")
     # _, img = video_capture.read()
     gray_img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-    cv2.imshow("gray image", gray_img)
-    cv2.waitKey(0)
+    
 
     # faces = cv2.RectVector()
     # faces = faceCascade.detectMultiScale(gray_img, 1.2, 5)
