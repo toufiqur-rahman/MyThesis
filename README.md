@@ -1,7 +1,7 @@
 Steps:
-1) install the requirement.txt
-2) pip install -r requirements.txt
-3) python train_model.py
-4) python recognize.py
+
+1) pip install -r requirement.txt
+2) python train_model.py
+3) python recognize.py
 
 Output: An image will be popup with detecting his face b a rectangle with a name 
