@@ -33,7 +33,7 @@ for img_path in paths:
     #id = int(img_path.split("/")[2].split("_")[0])
 
     faces.append(imgNp)
-    id = int(img_path.split(os.path.sep)[1].split("_")[0])
+    id = int(img_path.split(os.path.sep)[-1].split("_")[0])
     #print(id)
     ids.append(id)
 
@@ -51,6 +51,6 @@ trainer = cv2.face.LBPHFaceRecognizer_create()
 # Give the faces and ids numpy arrays
 trainer.train(faces, ids)
 # Write the generated model to a yml file
-trainer.save("training.yml")
-trainer.write("training.json")
+trainer.write("training.yml")
+#trainer.write("training.json")
 #print("[INFO] Training Done")
